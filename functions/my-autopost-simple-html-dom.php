@@ -87,7 +87,7 @@ function curl_exec_follow($ch, &$maxredirect = null)
     return curl_exec($ch);
 }
 
-function my_autopost_file_get_html($url, $target_charset = DEFAULT_TARGET_CHARSET, $method = 0, $useProxy = 0, $hideIP = 0, $proxy = null, $use_include_path = false, $context=null, $offset = -1, $maxLen=-1, $lowercase = true, $forceTagsClosed=true, $target_charset = DEFAULT_TARGET_CHARSET, $stripRN=true, $defaultBRText=DEFAULT_BR_TEXT, $defaultSpanText=DEFAULT_SPAN_TEXT)
+function my_autopost_file_get_html($url, $target_charset = DEFAULT_TARGET_CHARSET, $method = 0, $useProxy = 0, $hideIP = 0, $proxy = null, $use_include_path = false, $context=null, $offset = -1, $maxLen=-1, $lowercase = true, $forceTagsClosed=true, $stripRN=true, $defaultBRText=DEFAULT_BR_TEXT, $defaultSpanText=DEFAULT_SPAN_TEXT)
 {
     $dom = new simple_html_dom(null, $lowercase, $forceTagsClosed, $target_charset, $stripRN, $defaultBRText, $defaultSpanText);
     if ($method == 0) {
